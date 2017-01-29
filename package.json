@@ -1,0 +1,33 @@
+{
+  "name": "Vinyl",
+  "version": "1.0.0",
+  "description": "API for the Vinyl web.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinyl-sd/back-end.git"
+  },
+  "keywords": [
+    "vinyl",
+    "sd",
+    "sistemas",
+    "distribuidos",
+    "ucab",
+    "api"
+  ],
+  "author": "Sistemas Distribuidos - UCAB Guayana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vinyl-sd/back-end/issues"
+  },
+  "homepage": "https://github.com/vinyl-sd/back-end#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.1",
+    "mongoose": "^4.8.0"
+  }
+}

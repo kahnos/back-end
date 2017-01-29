@@ -1,0 +1,6 @@
+# Gitignore
+# Node related
+node_modules/
+
+# Other
+*.env
