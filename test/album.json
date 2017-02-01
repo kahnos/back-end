@@ -1,14 +1,14 @@
 {
-  "name": "I high fived your head",
-  "duration": 520,
-  "description": "Your face is joined with my hand",
-  "price": 10,
-  "icon_url": "http://res.cloudinary.com/vinyl/image/upload/v1485974617/albums/album.jpg",
-  "artist": "",
-  "songs": [],
-  "tags": [
-    "rock",
-    "moderm"
-  ],
-  "created_at": "2017-01-23T18:25:43.511Z"
+    "name": "I high fived your head",
+    "duration": 520,
+    "description": "Your face is joined with my hand",
+    "price": 10,
+    "icon_url": "http://res.cloudinary.com/vinyl/image/upload/v1485974617/albums/album.jpg",
+    "artist": "",
+    "songs": [],
+    "tags": [
+        "rock",
+        "modern"
+    ],
+    "created_at": "2017-01-23T18:25:43.511Z"
 }

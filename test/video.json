@@ -1,10 +1,10 @@
 {
-  "name": "welcome",
-  "url": "http://res.cloudinary.com/vinyl/video/upload/v1485974040/videos/Awesome_chemical_reactions.mp4",
-  "artist": "",
-  "tags": [
-    "welcome",
-    "promocional"
-  ],
-  "created_at": "2017-01-23T18:25:43.511Z"
+    "name": "welcome",
+    "url": "http://res.cloudinary.com/vinyl/video/upload/v1485974040/videos/Awesome_chemical_reactions.mp4",
+    "artist": "",
+    "tags": [
+        "welcome",
+        "promocional"
+    ],
+    "created_at": "2017-01-23T18:25:43.511Z"
 }
