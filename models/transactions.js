@@ -3,21 +3,16 @@
 * Provee el modelo para las transacciones de compra/venta en la BD de Vinyl con un objeto de Mongoose y lo exporta.
 */
 
-var mongoose = require('mongoose');
-
-// Contiene la información del producto involucrado.
-var productSchema = new mongoose.Schema({
-    product_id: { type: String, trim: true },
-    product_name: { type: String, trim: true },
-    product_type: { type: String, trim: true }
-});
+var mongoose = require('mongoose'),
+    Schema = mongoose.Schema;
 
 /*  Contiene la información de las entidades involucradas en la transacción:
     El usuario comprador, el artista vendedor y el producto vendido. */
 var involvedSchema = new mongoose.Schema({
-    user_id: { type: String, trim: true },
-    artist_id: { type: String, trim: true },
-    products: [ productSchema ]
+    user: { type: Schema.Types.ObjectId, ref: 'User' },
+    artist: { type: Schema.Types.ObjectId, ref: 'User' },
+    songs: [ { type: Schema.Types.ObjectId, ref: 'Song' } ],
+    albums: [ { type: Schema.Types.ObjectId, ref: 'Album' } ]
 });
 
 // Contiene la información de una transacción.

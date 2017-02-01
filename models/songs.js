@@ -3,7 +3,8 @@
 * Provee el modelo para las canciones en la BD de Vinyl con un objeto de Mongoose y lo exporta.
 */
 
-var mongoose = require('mongoose');
+var mongoose = require('mongoose'),
+    Schema = mongoose.Schema;
 
 // Contiene la información de una canción.
 var songSchema = new mongoose.Schema({
@@ -13,8 +14,8 @@ var songSchema = new mongoose.Schema({
     price: { type: Number },
     file_name: { type: String, trim: true },
     file_extension: { type: String, trim: true },
-    album_id: { type: String, trim: true },
-    artist_id: { type: String, trim: true },
+    album: { type: Schema.Types.ObjectId, ref: 'Album' },
+    artist: { type: Schema.Types.ObjectId, ref: 'User' },
     tags: [ { type: String, trim: true } ],
     created_at: { type: Date, default: Date.now }
 });

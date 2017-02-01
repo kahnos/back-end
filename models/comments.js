@@ -3,12 +3,13 @@
 * Provee el modelo para los comentarios de los usuarios en la BD de Vinyl con un objeto de Mongoose y lo exporta.
 */
 
-var mongoose = require('mongoose');
+var mongoose = require('mongoose'),
+    Schema = mongoose.Schema;
 
-// Contiene la información de una canción.
+// Contiene la información de un comentario.
 var commentSchema = new mongoose.Schema({
-    user_id: { type: String, trim: true },
-    song_id: { type: String, trim: true },
+    user: { type: Schema.Types.ObjectId, ref: 'User' },
+    song: { type: Schema.Types.ObjectId, ref: 'Song' },
     message: { type: String, trim: true },
     created_at: { type: Date, default: Date.now }
 });

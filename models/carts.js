@@ -3,22 +3,14 @@
 * Provee el modelo para el carro de compras de los usuarios en la BD de Vinyl con un objeto de Mongoose y lo exporta.
 */
 
-var mongoose = require('mongoose');
+var mongoose = require('mongoose'),
+    Schema = mongoose.Schema;
 
-// Contiene la información del producto en el carro.
-var productSchema = new mongoose.Schema({
-    product_id: { type: String, trim: true },
-    product_name: { type: String, trim: true },
-    product_type: { type: String, trim: true },
-    product_price: { type: Number },
-    artist_id: { type: String, trim: true },
-    artist_name: { type: String, trim: true }
-});
-
-// Contiene la información de una canción.
+// Contiene la información del carro de compras.
 var cartSchema = new mongoose.Schema({
-    user_id: { type: String, trim: true },
-    products: [ productSchema ]
+    user: { type: Schema.Types.ObjectId, ref: 'User' },
+    songs: [ { type: Schema.Types.ObjectId, ref: 'Song' } ],
+    albums: [ { type: Schema.Types.ObjectId, ref: 'Album' } ]
 });
 
 exports = module.exports = mongoose.model('Cart', cartSchema);
