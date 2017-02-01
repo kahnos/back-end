@@ -1,0 +1,29 @@
+{
+  "name": "Keep_talking",
+  "duration": 370,
+  "url": "http://res.cloudinary.com/vinyl/video/upload/v1485975361/songs/09._Keep_Talking.mp3",
+  "price": 5,
+  "file_name": "09._Keep_Talking.mp3",
+  "file_extension": "mp3",
+  "album": "",
+  "artist": "",
+  "tags": [
+    "rock"
+  ],
+  "created_at": "2017-01-23T18:25:43.511Z"
+}
+
+{
+  "name": "Fly me to the moon",
+  "duration": 150,
+  "url": "http://res.cloudinary.com/vinyl/video/upload/v1485974515/songs/Fly_Me_To_The_Moon.mp3",
+  "price": 5,
+  "file_name": "Fly_Me_To_The_Moon.mp3",
+  "file_extension": "mp3",
+  "album": "",
+  "artist": "",
+  "tags": [
+    "rock"
+  ],
+  "created_at": "2017-01-23T18:25:43.511Z"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Rusben",
+  "last_name": "Guzman",
+  "date_of_birth": "2017-01-23T18:25:43.511Z",
+  "sex": "male",
+  "email": "rusbenguzman@gmail.com",
+  "balance": 50,
+  "icon_url": "http://res.cloudinary.com/vinyl/image/upload/v1485973493/users/ruzguz.jpg",
+  "website_url": "http://example.com/",
+  "country": "Venezuela",
+  "status": "",
+  "stripe": {
+    "customer_id": "",
+    "managed_account_id": ""
+  },
+  "facebook": {
+    "facebook_id": "",
+    "url": ""
+  },
+  "twitter": {
+    "twitter_id": "",
+    "url": ""
+  },
+  "google": {
+    "google_id": "",
+    "url": ""
+  },
+  "cards": [
+    {
+      "card_id": "",
+      "type": "",
+      "status": "",
+      "default": false
+    }
+  ]
+}
