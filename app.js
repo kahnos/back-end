@@ -61,6 +61,8 @@ db.once('open', function() {
     // Rutas para la biblioteca
 
     // Rutas para la lista de reproducción
+    songs.route('/playlists/:playlist_id')
+        .get(playlistsController.getPlaylist);
 
     // Rutas para los ratings
 
