@@ -15,7 +15,7 @@ exports.getLibrary = function(req, res) {
     .populate('user','name last_name')
     .populate({
     	path: 'songs',
-    	select: 'name duration album artist',
+    	select: 'name duration album artist url',
     	populate: { 
     		path: 'artist', 
     		select: 'name last_name' 
@@ -26,7 +26,7 @@ exports.getLibrary = function(req, res) {
     	select: 'name icon_url songs artist',
     	populate: [{ 
     		path: 'songs', 
-    		select: 'name duration',
+    		select: 'name duration url'
     	},
     	 {
     		path: 'artist', 

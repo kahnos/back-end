@@ -51,6 +51,8 @@ db.once('open', function() {
 
     // Se asignan las funciones que manejarán los distintos endpoints.
     // Rutas para álbumes
+    albums.route('/albums/:album_id')
+        .get(albumsController.getAlbum);
 
     // Rutas para el carro de compras
 
