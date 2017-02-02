@@ -73,6 +73,10 @@ db.once('open', function() {
     // Rutas para las transacciones
 
     // Rutas para los usuarios
+    users.route('/users/loginFacebook')
+        .post(usersController.postFacebookID);
+    users.route('/users/loginGoogle')
+        .post(usersController.postGoogleID);
 
     // Rutas para los videos
 
