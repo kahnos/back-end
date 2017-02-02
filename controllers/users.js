@@ -9,12 +9,12 @@ exports.postFacebookLog = function(req, res) {
     console.log('POST /users/loginFacebook')
     
     var FacebookUser = req.params.FacebookModel
-    users.find( facebook: "$in": facebook_id: FacebookUser.id )
+    users.find( 'facebook.facebook_id': FacebookUser.id )
     .exec(function(err, user){
     
         if (err){
             var newUser = new users({
-            name: FacebookUser.name
+                name: FacebookUser.name
                 last_name: FacebookUser
                 email: FacebookUser.email
                 icon_url: FacebookUser.image_url
@@ -42,7 +42,7 @@ export.postGoogleLog = function(req, res) {
     
     var GoogleUser = req.params.GoogleModel; 
 
-    users.find( {google: "$in": google_id: User.getId()} ,function(err, user) {
+    users.find( {'google.google_id': User.getId()} ,function(err, user) {
         if (err){
             var newUser = new users({
                 name: GoogleUser.getGivenName()
