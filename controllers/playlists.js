@@ -14,7 +14,7 @@ exports.getPlaylist = function(req, res) {
     .populate('user', 'name last_name icon_url')
     .populate({
         path: 'songs',
-        select: 'name duration album artist',
+        select: 'name duration album artist url',
         populate: [
             {
                path: 'album',
