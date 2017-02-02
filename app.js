@@ -11,7 +11,7 @@ var bodyParser  = require("body-parser"), // Permite parsear JSON. Decodificará
 require('dotenv').config(); // Módulo que permite la carga de archivos .env
 
 // Conexión a la BD
-mongoose.connect('mongodb://' + process.env.DB_HOST + '/' + process.env.DB_NAME);
+mongoose.connect('mongodb://' + process.env.TESTING_DB_HOST + '/' + process.env.TESTING_DB_NAME);
 var db = mongoose.connection;
 
 // Se llama si la conexión con la BD devuelve un error.
@@ -55,6 +55,8 @@ db.once('open', function() {
     // Rutas para el carro de compras
 
     // Rutas para comentarios
+    comments.route('/comments')
+        .post(commentsController.postComment);
 
     // Rutas para la biblioteca
 
@@ -63,12 +65,8 @@ db.once('open', function() {
     // Rutas para los ratings
 
     // Rutas para las canciones
-    /*
-    Ejemplo para la asignación de una ruta:
-    songs.route('/songs')
+    songs.route('/songs/:song_id')
         .get(songsController.getSong);
-        -> Donde getSong es la función que se exporta desde el controlador con ese nombre.
-    */
 
     // Rutas para las subscripciones
 
